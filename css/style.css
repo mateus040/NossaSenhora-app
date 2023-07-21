@@ -223,7 +223,7 @@ header{
 }
 /* ====== Fim Estilização Section Shop ====== */
 
-/* ====== Estilização Section Delivery ====== */
+/* ====== Estilização Section Delivery e App ====== */
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -248,5 +248,31 @@ header{
     margin: 0.5rem 0 1rem;
     text-align: justify;
 }
-/* ====== Fim Estilização Section Delivery ====== */
+/* ====== Fim Estilização Section Delivery e App ====== */
+
+/* ====== Estilização Section About ====== */
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    background: #c9e1ff;
+    gap: 1.5rem;
+}
+
+.about-img{
+    flex: 1 1 17rem;
+}
+
+.about-text{
+    flex: 1 1 17rem;
+}
+
+.about-text h2{
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+
+.about-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
 
