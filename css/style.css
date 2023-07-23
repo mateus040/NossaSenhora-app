@@ -175,7 +175,7 @@ header{
 
 .shop-container .box{
     flex: 1 1 10rem;
-    background: var(--main-color);
+    background: #c9e1ff;
     padding: 20px;
     display: flex;
     text-align: center;
@@ -203,23 +203,23 @@ header{
 }
 
 .shop-container .box .stars .bx{
-    color: #ebdbc8;
+    color: var(--second-color);
 }
 
 .shop-container .box span{
-    color: #ebdbc8;
+    color: #000;
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0.2rem 0 0.5rem;
 }
 
 .box .btn{
-    border: 2px solid #ebdbc8;
+    border: 2px solid var(--second-color);
 }
 
 .box .btn:hover{
-    background: #ebdbc8;
-    color: var(--second-color);
+    background: var(--second-color);
+    color: #fff;
 }
 /* ====== Fim Estilização Section Shop ====== */
 
