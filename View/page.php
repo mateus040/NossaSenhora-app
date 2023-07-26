@@ -9,28 +9,9 @@
 </head>
 <body>
     
-    <!-- Header -->
-    <header>
-
-        <!-- Logo -->
-        <a href="" class="logo">
-            <img src="img/logo1.jpg">
-        </a>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
-
-        <!-- Navbar -->
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page1.html">Shop</a></li>
-            <li><a href="#delivery">Delivery</a></li>
-            <li><a href="#app">App</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-    </header>
-    <!-- Fim Header -->
+    <!-- Navbar -->
+        <?php include 'includes/navbar.php' ?>
+    <!-- Fim Navbar -->
 
     <main>
         <article>
@@ -45,24 +26,12 @@
     </main>
 
     <!-- Section Contact-->
-    <section class="contact" id="contact">
-        <div class="social">
-            <a href=""><i class="bx bxl-facebook"></i></a>
-            <a href=""><i class="bx bxl-twitter"></i></a>
-            <a href=""><i class="bx bxl-instagram"></i></a>
-            <a href=""><i class="bx bxl-youtube"></i></a>
-        </div>
-
-        <div class="links">
-            <a href="">Privacy Policy</a>
-            <a href="">Terms Of Use</a>
-            <a href="">Our Company</a>
-        </div>
-        <p>&#169; CarpoolVenom All Right Reserved.</p>
-    </section>
+    <?php include 'includes/footer.php' ?>
     <!-- Fim Section Contact-->
 
-    <script src="js/main.js"></script>
+    
+    <!-- JavaScript -->
+    <?php include 'includes/js_config.php' ?>
 
 </body>
 </html>

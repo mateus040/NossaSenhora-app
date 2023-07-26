@@ -4,35 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site</title>
-    <!--Link CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--Link BoxIcon-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <?php include 'includes/css_config.php' ?>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-
-        <!-- Logo -->
-        <a href="" class="logo">
-            <img src="img/logo1.jpg">
-        </a>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
-
-        <!-- Navbar -->
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page1.html">Shop</a></li>
-            <li><a href="#delivery">Delivery</a></li>
-            <li><a href="#app">App</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-    </header>
-    <!-- Fim Header -->
+    <!-- Navbar -->
+    <?php include 'includes/navbar.php' ?>
+    <!-- Fim Navbar -->
 
     <!-- Section Home -->
     <section class="home" id="home">
@@ -44,7 +22,7 @@
         </div>
 
         <div class="home-img">
-            <img src="img/home1.png">
+            <img src="assets/img/home1.png">
         </div>
     </section>
     <!-- Fim Section Home -->
@@ -59,7 +37,7 @@
         <div class="shop-container">
             <div class="box">
                 <div class="box-img">
-                    <img src="img/cadeia.png">
+                    <img src="assets/img/cadeia.png">
                 </div>
 
                 <div class="stars">
@@ -77,7 +55,7 @@
 
             <div class="box">
                 <div class="box-img">
-                    <img src="img/imagemNS.png">
+                    <img src="assets/img/imagemNS.png">
                 </div>
 
                 <div class="stars">
@@ -95,7 +73,7 @@
 
             <div class="box">
                 <div class="box-img">
-                    <img src="img/medalha.png">
+                    <img src="assets/img/medalha.png">
                 </div>
 
                 <div class="stars">
@@ -123,7 +101,7 @@
 
         <div class="container">
             <div class="delivery-img">
-                <img src="img/nossa-senhora.jpg">
+                <img src="assets/img/nossa-senhora.jpg">
             </div>
 
             <div class="delivery-text">
@@ -152,7 +130,7 @@
             </div>
 
             <div class="app-img">
-                <img src="img/nossa-senhora-gracas.jpg">
+                <img src="assets/img/nossa-senhora-gracas.jpg">
             </div>
         </div>
     </section>
@@ -161,7 +139,7 @@
     <!-- Section About -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="img/virgem-maria.png">
+            <img src="assets/img/virgem-maria.png">
         </div>
 
         <div class="about-text">
@@ -174,24 +152,12 @@
     <!-- Fim Section About -->
 
     <!-- Section Contact-->
-    <section class="contact" id="contact">
-        <div class="social">
-            <a href=""><i class="bx bxl-facebook"></i></a>
-            <a href=""><i class="bx bxl-twitter"></i></a>
-            <a href=""><i class="bx bxl-instagram"></i></a>
-            <a href=""><i class="bx bxl-youtube"></i></a>
-        </div>
-
-        <div class="links">
-            <a href="">Privacy Policy</a>
-            <a href="">Terms Of Use</a>
-            <a href="">Our Company</a>
-        </div>
-        <p>&#169; CarpoolVenom All Right Reserved.</p>
-    </section>
+    <?php include 'includes/footer.php' ?>
     <!-- Fim Section Contact-->
 
-    <script src="js/main.js"></script>
+
+    <!-- JavaScript -->
+    <?php include 'includes/js_config.php' ?>
     
 </body>
 </html>
