@@ -1,4 +1,237 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --main-color: #005eda;
+    --second-color: #003780;
+}
+
+section{
+    padding: 50px 10%;
+}
+
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+
+/* ====== Estilização Conteúdo Principal ====== */
+main {
+    margin-top: 100px;
+    padding: 20px; /* Importante */
+    /*padding-bottom: 100px; /* Espaço vazio para evitar que o footer sobreponha o conteúdo */
+}
+
+article {
+    max-width: 800px; /* Importante */
+    margin: 0 auto; /* Importante */
+    line-height: 1.6;
+}
+
+article p{
+    padding-bottom: 1rem;
+}
+
+/* ====== Estilização Titúlo ====== */
+.titulo{
+    text-align: center;
+}
+
+.titulo h1{
+    font-size: 35px;
+    color: var(--second-color);
+    font-family: "Lora", sans-serif;
+}
+
+.titulo p{
+    color: #dba11d;
+    font-size: 25px;
+}
+
+.titulo p{
+    font-style: italic;
+    font-size: 15px;
+}
+/* ====== Fim Estilização Titúlo ====== */
+
+.introducao, .aparicoes{
+    padding-bottom: 1.5rem;
+}
+
+/* ====== Estilização Aparições ====== */
+.aparicoes h3{
+    color: var(--second-color);
+    font-size: 25px;
+    font-family: "Lora", sans-serif;
+}
+
+.aparicoes .subtitulo{
+    font-style: italic;
+    font-size: 15px;
+    color: #dba11d;
+}
+/* ====== Fim Estilização Aparições ====== */
+
+.fontes a{
+    font-size: 18px;
+    font-style: normal;
+}
+
+/* ====== Fim Estilização Conteúdo Principal */
+
+
+/* ====== Estilização Section Contact ====== */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social a{
+    font-size: 27px;
+    margin: 0.5rem;
+}
+
+.social a .bx{
+    padding: 5px;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+}
+
+.social a .bx:hover{
+    background: var(--main-color);
+}
+
+.links{
+    margin: 1rem 0 1rem;
+}
+
+.links a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 1rem;
+}
+
+.contact p{
+    text-align: center;
+}
+/* ====== Fim Estilização Section Contact ====== */
+
+
+/* ====== Responsividade ====== */
+@media (max-width: 1150px){
+    header{
+        padding: 18px 7%;
+    }
+
+    section{
+        padding: 50px 7%;
+    }
+
+    .home-text h1{
+        font-size: 3rem;
+    }
+
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px){
+    header{
+        padding: 18px 4%;
+    }
+
+    section{
+        padding: 50px 4%;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        padding: 11px 4%;
+    }
+
+    #menu-icon{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+    }
+
+    .navbar.active{
+        top: 100%;
+    }
+
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+    }
+
+    .home-text span{
+        font-size: 0.9rem;
+    }
+
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+
+    .home-text h2{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px){
+    .home-text{
+        padding-top: inherit;
+    }
+
+    .shop-container .box{
+        margin-top: 6rem;
+    }
+
+    .heading h1{
+        font-size: 1.5rem;
+    }
+
+    .heading span{
+        font-size: 0.9rem;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 *{
     margin: 0;
@@ -81,7 +314,7 @@ header{
 main {
     margin-top: 100px;
     padding: 20px; /* Importante */
-    padding-bottom: 20px; /* Espaço vazio para evitar que o footer sobreponha o conteúdo */
+    /*padding-bottom: 100px; /* Espaço vazio para evitar que o footer sobreponha o conteúdo */
 }
 
 article {
@@ -90,10 +323,43 @@ article {
     line-height: 1.6;
 }
 
-article h1 {
-    font-size: 28px;
+article p{
+    padding-bottom: 1rem;
 }
 
+.titulo{
+    text-align: center;
+}
+
+.titulo h1{
+    font-size: 35px;
+    color: var(--second-color);
+}
+
+.titulo p{
+    color: #dba11d;
+    font-size: 25px;
+}
+
+.titulo p{
+    font-style: italic;
+    font-size: 15px;
+}
+
+.introducao, .aparicoes{
+    padding-bottom: 1.5rem;
+}
+
+.aparicoes h3{
+    color: var(--second-color);
+    font-size: 25px;
+}
+
+.aparicoes .subtitulo{
+    font-style: italic;
+    font-size: 15px;
+    color: #dba11d;
+}
 
 
 /* ====== Estilização Section Contact ====== */

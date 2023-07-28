@@ -8,8 +8,8 @@ switch($uri_parse)
         include 'View/home.php';
     break;
 
-    case '/page':
-        include 'View/page.php';
+    case '/ns-fatima':
+        include 'View/ns-fatima.php';
     break;
 
     default:
